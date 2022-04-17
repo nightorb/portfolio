@@ -1,0 +1,83 @@
+@import './themes';
+@import './spaces';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0 auto;
+  // max-width: 60vw;
+  font-family: $font-family-text;
+  color: $light-200;
+  background-color: $dark-800; 
+}
+
+
+h1, h2, h3 {
+  font-family: $font-family-heading;
+}
+h1.section-heading {
+  font-size: $font-size-5xl;
+  text-transform: uppercase;
+  margin: $s-6 0 $s-4 0;
+  // background-image: $gradient-primary-heading;
+  // background-clip: text;
+  // -webkit-text-fill-color: transparent;
+}
+
+// // gradient button
+// .btn {
+//   position: relative;
+//   min-height: $s-4;
+//   background: $gradient-primary-btn;
+//   // background-color: $primary-300;
+//   color: $light-200;
+//   font-family: $font-family-heading;
+//   font-size: $font-size-lg;
+//   font-weight: 500;
+//   text-transform: uppercase;
+//   border: none;
+//   border-radius: $br-1;
+//   box-shadow: $box-shadow-10-lt, $box-shadow-10-lt, $box-shadow-15-lt;
+//   padding: $s-2;
+//   z-index: 1;
+//   cursor: pointer;
+//   &::before {
+//     position: absolute;
+//     content: '';
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     border: none;
+//     border-radius: $br-1;
+//     background-image: $gradient-primary-btn-hover;
+//     // background-color: $primary-200;
+//     z-index: -1;
+//     transition: opacity 0.3s linear;
+//     opacity: 0;
+//   }
+//   &:hover::before {
+//     opacity: 1;
+//   }
+// }
+
+.btn {
+  background-color: $primary-300;
+  color: $light-200;
+  font-family: $font-family-heading;
+  font-size: $font-size-lg;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  border-radius: $br-1;
+  box-shadow: $box-shadow-10-lt, $box-shadow-10-lt, $box-shadow-15-lt;
+  padding: $s-2;
+  cursor: pointer;
+  transition: 0.3s linear;
+  &:hover {
+    background-color: $primary-200;
+  }
+}

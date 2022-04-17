@@ -1,0 +1,30 @@
+@import '../../themes';
+@import '../../spaces';
+
+#Hero {
+  height: 100vh;
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: $s-0 auto;
+}
+
+h1.big-heading {
+  font-size: $font-size-6xl;
+  text-transform: uppercase;
+  margin-bottom: $sn-2;
+  margin-top: $sn-2;
+  background-image: $gradient-hero;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2.big-heading {
+  font-size: $font-size-3xl;
+  text-transform: uppercase;
+}
+h2.sub-heading {
+  font-size: $font-size-3xl;
+  font-weight: 300;
+}

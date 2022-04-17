@@ -1,0 +1,22 @@
+$spacer: 1rem;
+
+$s-0: 0;
+$s-1: $spacer * 0.5;
+$s-2: $spacer;
+$s-3: $spacer * 1.5;
+$s-4: $spacer * 2;
+$s-5: $spacer * 3;
+$s-6: $spacer * 4;
+$s-7: $spacer * 5;
+
+// negative spacing
+$sn-1: $spacer * (-0.5);
+$sn-2: $spacer * (-1);
+$sn-3: $spacer * (-1.5);
+$sn-4: $spacer * (-2);
+$sn-5: $spacer * (-3);
+$sn-6: $spacer * (-4);
+$sn-7: $spacer * (-5);
+
+// border-radius
+$br-1: 4px;

@@ -1,0 +1,30 @@
+@import '../../themes';
+@import '../../spaces';
+
+#Navbar {
+  height: $s-7;
+  display: flex;
+  justify-content: center;
+  margin-bottom: $sn-7;
+  .navbar-nav {
+    display: inherit;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    > a {
+      font-family: $font-family-heading;
+      font-size: $font-size-lg;
+      font-weight: 300;
+      letter-spacing: $letter-spacing-md;
+      color: $light-200;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover,
+      &:focus {
+        color: $accent-100;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,25 @@
+@import '../../themes';
+@import '../../spaces';
+
+#Projects {
+  display: flex;
+  flex-flow: column;
+  padding: $s-7 0;
+  margin-bottom: $s-7;
+  background-color: $dark-700;
+}
+
+.projects-section {
+  max-width: 60vw;
+  margin: $s-0 auto;
+  h1.section-heading {
+    margin-bottom: $s-4;
+    color: $light-200;
+  }
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

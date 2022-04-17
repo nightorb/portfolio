@@ -1,0 +1,22 @@
+@import '../../themes';
+@import '../../spaces';
+
+#About {
+  display: flex;
+  flex-flow: column;
+  // background-color: $dark-700;
+  background-image: $gradient-primary;
+  padding: $s-7 0;
+  color: $light-100;
+  opacity: 0.9;
+  .about-section {
+    max-width: 60vw;
+    margin: $s-0 auto;
+  }
+  p.about-text {
+    font-size: $font-size-2xl;
+    line-height: $line-height-md;
+    margin-top: $s-4;
+    // color: $light-200;
+  }
+}

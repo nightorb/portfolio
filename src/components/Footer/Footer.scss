@@ -1,0 +1,32 @@
+@import '../../themes';
+@import '../../spaces';
+
+#Footer {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  background-image: $gradient-primary;
+  margin-bottom: $s-7;
+  opacity: 0.9;
+  .footer-nav {
+    display: inherit;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    > a {
+      font-family: $font-family-heading;
+      font-size: $font-size-lg;
+      font-weight: 300;
+      letter-spacing: $letter-spacing-md;
+      color: $light-200;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover,
+      &:focus {
+        color: $light-50;
+      }
+    }
+  }
+}
+

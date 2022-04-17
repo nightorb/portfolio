@@ -1,0 +1,73 @@
+// primary color
+$primary-100: #AA71E0;
+$primary-200: #925ad2;
+$primary-300: #7843c5;
+$primary-400: #5c2cb7;
+$primary-500: #3b14aa;
+
+// accent color
+$accent-100: #afbd00;
+$accent-200: #6da829;
+$accent-300: #00914f;
+$accent-400: #00806d;
+
+// neutral color light
+$light-50: #FAFAFA;
+$light-100: #EDEDEE;
+$light-200: #D4D4D4;
+$light-300: #BCBCBC;
+$light-400: #A4A4A5;
+$light-500: #8A8B8C;
+$light-600: #717273;
+$light-700: #5E5F60;
+$light-800: #4A4B4C;
+$light-900: #3A3B3C;
+
+// neutral color dark
+$dark-50: #444445;
+$dark-100: #3A3B3C;
+$dark-200: #343536;
+$dark-300: #2D2E2F;
+$dark-400: #252627;
+$dark-500: #1F2021;
+$dark-600: #1B1C1D;
+$dark-700: #171819;
+$dark-800: #131314;
+$dark-900: #0E0E0F;
+
+// gradients
+$gradient-primary: linear-gradient(155deg, $primary-500, $primary-400, $primary-300, $primary-200);
+$gradient-primary-heading: linear-gradient(100deg, $primary-400, $primary-300, 30%, $primary-100);
+$gradient-primary-tags: radial-gradient($primary-200, $primary-300);
+$gradient-hero: linear-gradient(330deg, $primary-500, $primary-400, $primary-300, $primary-200, $primary-100);
+
+
+// font families
+$font-family-heading: 'Inter', sans-serif;
+$font-family-text: 'Nunito', sans-serif;
+
+// font-sizes
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 2rem;
+$font-size-4xl: 3rem;
+$font-size-5xl: 4rem;
+$font-size-6xl: 5rem;
+
+// line heights
+$line-height-sm: 1.25;
+$line-height-md: 1.5;
+
+// letter spacings
+$letter-spacing-sm: 0.025em;
+$letter-spacing-md: 0.05em;
+$letter-spacing-lg: 0.1em;
+
+// box-shadows
+$box-shadow-10: 0 0 10px $dark-900;
+$box-shadow-10-lt: 0 0 10px $dark-700;
+$box-shadow-15: 0 0 15px $dark-900;
+$box-shadow-15-lt: 0 0 15px $dark-700;

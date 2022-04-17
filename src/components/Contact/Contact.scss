@@ -1,0 +1,52 @@
+@import '../../themes';
+@import '../../spaces';
+
+#Contact {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  h1.section-heading {
+    text-align: center;
+  }
+  p {
+    font-size: $font-size-2xl;
+    text-align: center;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  min-width: 300px;
+  max-width: 700px;
+  background-color: $dark-600;
+  border-radius: $br-1;
+  box-shadow: $box-shadow-10, $box-shadow-10, $box-shadow-15;
+  margin: $s-4 auto;
+  padding: $s-4;
+  .contact-form-input-group {
+    margin-bottom: $s-3;
+    .contact-form-label {
+      display: block;
+      font-family: $font-family-heading;
+      font-size: $font-size-lg;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: $s-2;
+    }
+    .contact-form-input {
+      width: 100%;
+      font-family: $font-family-heading;
+      font-size: $font-size-sm;
+      font-weight: 300;
+      background-color: $dark-400;
+      color: $light-100;
+      border: none;
+      border-radius: $br-1;
+      box-shadow: $box-shadow-10-lt, $box-shadow-10-lt, $box-shadow-15-lt;
+      padding: $s-2;
+    }
+  }
+}
