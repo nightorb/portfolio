@@ -1,22 +1,51 @@
 @import '../../themes';
 @import '../../spaces';
+@import '../../queries';
 
 #About {
   display: flex;
   flex-flow: column;
-  // background-color: $dark-700;
   background-image: $gradient-primary;
   padding: $s-7 0;
   color: $light-100;
   opacity: 0.9;
   .about-section {
-    max-width: 60vw;
+    width: 60vw;
     margin: $s-0 auto;
+    @include lg {
+      width: 70vw;
+    }
+    @include md {
+      width: 80vw;
+      .section-heading {
+        margin-left: $s-0;
+      }
+    }
+    @include sm {
+      width: 80vw;
+      .section-heading {
+        margin-left: $s-0;
+      }
+    }
+    @include xs {
+      width: 90vw;
+      .section-heading {
+        margin-left: $s-0;
+      }
+    }
   }
   p.about-text {
     font-size: $font-size-2xl;
     line-height: $line-height-md;
     margin-top: $s-4;
-    // color: $light-200;
+    @include md {
+      font-size: $font-size-xl;
+    }
+    @include sm {
+      font-size: $font-size-lg;
+    }
+    @include xs {
+      font-size: $font-size-lg;
+    }
   }
 }

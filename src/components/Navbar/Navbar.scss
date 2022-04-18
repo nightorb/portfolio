@@ -1,5 +1,6 @@
 @import '../../themes';
 @import '../../spaces';
+@import '../../queries';
 
 #Navbar {
   height: $s-7;
@@ -11,18 +12,42 @@
     justify-content: space-evenly;
     width: 50%;
     align-items: center;
-    > a {
+    @include md {
+      width: 65%;
+    }
+    @include sm {
+      width: 85%;
+    }
+    @include xs {
+      width: 90%;
+      height: calc($s-7 + $s-6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: $s-3;
+    }
+    .nav-link {
       font-family: $font-family-heading;
       font-size: $font-size-lg;
-      font-weight: 300;
       letter-spacing: $letter-spacing-md;
       color: $light-200;
       text-decoration: none;
       text-transform: uppercase;
       transition: 0.3s;
+      cursor: pointer;
       &:hover,
       &:focus {
         color: $accent-100;
+      }
+      @include md {
+        font-size: $font-size-md;
+      }
+      @include sm {
+        font-size: $font-size-md;
+      }
+      @include xs {
+        font-size: $font-size-md;
       }
     }
   }

@@ -1,5 +1,6 @@
 @import '../../themes';
 @import '../../spaces';
+@import '../../queries';
 
 #Projects {
   display: flex;
@@ -10,11 +11,23 @@
 }
 
 .projects-section {
-  max-width: 60vw;
+  width: 60vw;
   margin: $s-0 auto;
   h1.section-heading {
     margin-bottom: $s-4;
     color: $light-200;
+  }
+  @include lg {
+    width: 70vw;
+  }
+  @include md {
+    width: 80vw;
+  }
+  @include sm {
+    width: 80vw;
+  }
+  @include xs {
+    width: 90vw;
   }
 }
 

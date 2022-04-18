@@ -21,9 +21,10 @@ export default function Projects() {
               projectImages={project.projectImages}
               ghUrl={project.ghUrl}
               liveUrl={project.liveUrl}
-              key={project.image}
+              key={project.title}
             />
           ))}
+
         </div>
       </div>
     </section>

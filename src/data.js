@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 1,
     title: 'myFlix',
     subtitle: 'SPA with routing, rich interactions, several interface views, and a polished user experience',
     stack: [
@@ -28,6 +29,7 @@ export const projects = [
     liveUrl: 'https://nightorbs-myflix.netlify.app/'
   },
   {
+    id: 2,
     title: 'Meet',
     subtitle: 'Serverless PWA built with React following a TDD workflow',
     stack: [
@@ -42,6 +44,7 @@ export const projects = [
     liveUrl: 'https://nightorb.github.io/meet/'
   },
   {
+    id: 3,
     title: 'HelloChat',
     subtitle: 'Chat app for mobile devices built with React Native',
     stack: [
@@ -56,6 +59,7 @@ export const projects = [
     liveUrl: ''
   },
   {
+    id: 4,
     title: 'Pokédex App',
     subtitle: 'Small web application that loads data from an external API',
     stack: [

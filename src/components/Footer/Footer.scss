@@ -1,31 +1,78 @@
 @import '../../themes';
 @import '../../spaces';
+@import '../../queries';
 
 #Footer {
+  position: relative;
   height: 20vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-image: $gradient-primary;
   margin-bottom: $s-7;
+  padding: $s-2 0;
   opacity: 0.9;
+  @include xs {
+    padding: $s-1 0;
+  }
+  .footer-text {
+    height: fit-content;
+    font-size: $font-size-2xl;
+    margin: $s-1 0;
+    @include md {
+      font-size: $font-size-xl;
+    }
+    @include sm {
+      font-size: $font-size-lg;
+      width: 80vw;
+      text-align: center;
+    }
+    @include xs {
+      font-size: $font-size-lg;
+      width: 90vw;
+      margin: $s-0;
+      text-align: center;
+    }
+  }
   .footer-nav {
     display: inherit;
     justify-content: space-evenly;
     width: 50%;
-    align-items: center;
-    > a {
-      font-family: $font-family-heading;
+    height: fit-content;
+    margin: $s-1 0;
+    @include md {
+      width: 65%;
+    }
+    @include sm {
+      width: 80%;
+    }
+    @include xs {
+      width: 90%;
+      margin: $s-0;
+    }
+  }
+  .footer-icons {
+    transition: opacity 0.5s;
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+  .footer-copyright {
+    position: absolute;
+    bottom: $sn-7;
+    height: fit-content;
+    font-size: $font-size-xl;
+    @include md {
       font-size: $font-size-lg;
-      font-weight: 300;
-      letter-spacing: $letter-spacing-md;
-      color: $light-200;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: 0.3s;
-      &:hover,
-      &:focus {
-        color: $light-50;
-      }
+    }
+    @include sm {
+      font-size: $font-size-md;
+      bottom: calc($sn-7 - $sn-1);
+    }
+    @include xs {
+      font-size: $font-size-md;
+      bottom: calc($sn-7 - $sn-1);
     }
   }
 }

@@ -1,0 +1,33 @@
+// breakpoints
+$screen-sm: 560px;
+$screen-md: 720px;
+$screen-lg: 1200px;
+$screen-xl: 1931px;
+
+// extra small devices
+@mixin xs {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+// small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm}) and (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+// medium devices
+@mixin md {
+  @media (min-width: #{$screen-md}) and (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+// large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg}) and (max-width: #{$screen-xl}) {
+    @content;
+  }
+}

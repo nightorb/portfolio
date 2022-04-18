@@ -1,5 +1,6 @@
 @import '../../themes';
 @import '../../spaces';
+@import '../../queries';
 
 #Skills {
   padding: $s-7 0;
@@ -7,16 +8,45 @@
 }
 
 .skills-list {
-  max-width: 60vw;
+  width: 60vw;
   display: flex;
   flex-direction: row;
   margin: $s-0 auto;
   margin-top: calc($font-size-xl + $s-7);
+  @include lg {
+    flex-direction: column;
+    width: 70vw;
+  }
+  @include md {
+    width: 80vw;
+    flex-direction: column;
+  }
+  @include sm {
+    width: 80vw;
+    flex-direction: column;
+    margin-top: $s-6;
+  }
+  @include xs {
+    width: 90vw;
+    flex-direction: column;
+    margin-top: $s-6;
+  }
 }
 h1.section-heading {
   width: 60vw;
-  font-size: $font-size-5xl;
   margin: $s-0 auto;
+  @include lg {
+    width: 70vw;
+  }
+  @include md {
+    width: 80vw;
+  }
+  @include sm {
+    width: 80vw;
+  }
+  @include xs {
+    width: 90vw;
+  }
 }
 
 .skills-section {
@@ -37,6 +67,44 @@ h1.section-heading {
   &:last-child {
     margin-right: $s-0;
   }
+  @include lg {
+    margin: $s-5 $s-0;
+    align-items: flex-start;
+    &:first-child {
+      margin-top: $s-2;
+    }
+    &:last-child {
+      margin-bottom: $s-2;
+    }
+  }
+  @include md {
+    margin: calc($s-4 + $s-1) $s-0;
+    align-items: flex-start;
+    &:first-child {
+      margin-top: $s-1;
+    }
+    &:last-child {
+      margin-bottom: $s-1;
+    }
+  }
+  @include sm {
+    margin: $s-4 $s-0;
+    &:first-child {
+      margin-top: $s-0;
+    }
+    &:last-child {
+      margin-bottom: $s-0;
+    }
+  }
+  @include xs {
+    margin: $s-4 $s-0;
+    &:first-child {
+      margin-top: $s-0;
+    }
+    &:last-child {
+      margin-bottom: $s-0;
+    }
+  }
   h2.skills-subheading {
     position: absolute;
     top: $sn-6;
@@ -45,6 +113,18 @@ h1.section-heading {
     font-weight: 600;
     text-transform: uppercase;
     margin: $s-0;
+    @include md {
+      font-size: $font-size-2xl;
+      top: $sn-5;
+    }
+    @include sm {
+      font-size: $font-size-xl;
+      top: calc($sn-4 + $sn-1);
+    }
+    @include xs {
+      font-size: $font-size-xl;
+      top: $sn-4;
+    }
   }
   ul {
     display: flex;
@@ -52,15 +132,30 @@ h1.section-heading {
     justify-content: center;
     padding: $s-0;
     margin: $s-0;
+    @include lg {
+      justify-content: flex-start;
+    }
+    @include md {
+      justify-content: flex-start;
+    }
   }
   li {
     list-style-type: none;
-    font-size: $font-size-xl;
+    font-size: $font-size-lg;
     background-color: $primary-300;
     padding: $s-1 $s-2;
     border-radius: $br-1;
     box-shadow: $box-shadow-10-lt, $box-shadow-15-lt;
     margin: $s-1;
+    @include md {
+      font-size: $font-size-md;
+    }
+    @include sm {
+      font-size: $font-size-sm;
+    }
+    @include xs {
+      font-size: $font-size-sm;
+    }
   }
 }
 

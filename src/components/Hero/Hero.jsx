@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import './Hero.scss';
 
@@ -12,6 +13,27 @@ export default function Hero() {
       <h2 className="sub-heading">
         I'm specialized in designing and coding engaging visual experiences.
       </h2>
+      <div className="hero-link-container">
+        <Link
+          to="Contact"
+          smooth={true}
+          duration={2000}
+          delay={100}
+          offset={100}
+          className="btn btn-hero"
+        >
+          Get In Touch
+        </Link>
+        <Link
+          to="Projects"
+          smooth={true}
+          duration={1500}
+          delay={100}
+          className="btn btn-hero"
+        >
+          View Projects
+        </Link>
+      </div>
     </section>
   );
 }
