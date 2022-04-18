@@ -62,7 +62,7 @@ export default function Contact() {
         onSubmit={handleSubmit(onSubmit)}
         className="contact-form"
       >
-        <div style={{display: "none"}}>
+        <div style={{visibility: "hidden"}}>
           <label>Don't fill this out if you're human:</label>
           <input name="botField" onChange={(e) => setBotFielt(e.target.value)} />
         </div>
