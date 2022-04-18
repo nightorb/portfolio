@@ -10,13 +10,13 @@ export default function Footer() {
       </div>
       <nav className="footer-nav">
         <a href="https://www.linkedin.com/in/anastasia-n-945661227" className="footer-icons" target="_blank" rel="noreferrer">
-          <img src="../../../icons/linkedin_icon.svg" alt="LinkedIn logo" />
+          <img src={process.env.PUBLIC_URL + "/icons/linkedin_icon.svg"} alt="LinkedIn logo" />          
         </a>
         <a href="https://github.com/nightorb" className="footer-icons" target="_blank" rel="noreferrer">
-          <img src="../../../icons/github_icon.svg" alt="GitHub logo" />
+          <img src={process.env.PUBLIC_URL + "/icons/github_icon.svg"} alt="GitHub logo" />
         </a>
         <a href="https://www.artstation.com/nightorb" className="footer-icons" target="_blank" rel="noreferrer">
-          <img src="../../../icons/artstation_icon.svg" alt="Artstation logo" />
+          <img src={process.env.PUBLIC_URL + "/icons/artstation_icon.svg"} alt="Artstation logo" />
         </a>
       </nav>
       <div className="footer-copyright">

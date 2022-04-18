@@ -6,7 +6,7 @@ export default function ProjectCard(props) {
   return (
     <div id="ProjectCard">
       <img
-        src={`../../../img/${props.coverImage}.png`}
+        src={process.env.PUBLIC_URL + `/img/${props.coverImage}.png`}
         alt={props.title}
         className="project-img"
       />
