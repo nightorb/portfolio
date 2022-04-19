@@ -38,6 +38,14 @@ export const projects = [
     ],
     description: '"Meet" is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.',
     coverImage: 'Meet_DataVis',
+    projectImages: [
+      'myFlix_LoginView',
+      'myFlix_MoviesPage',
+      'myFlix_MovieDetails',
+      'myFlix_DirectorView',
+      'myFlix_GenresList',
+      'myFlix_UserProfile'
+    ],
     ghUrl: 'https://github.com/nightorb/meet',
     liveUrl: 'https://nightorb.github.io/meet/'
   },
@@ -52,6 +60,14 @@ export const projects = [
     ],
     description: '"HelloChat" is a chat app for mobile devices created with React Native. The app provides users with a chat interface and options to share images and their location.',
     coverImage: 'HelloChat_start',
+    projectImages: [
+      'myFlix_LoginView',
+      'myFlix_MoviesPage',
+      'myFlix_MovieDetails',
+      'myFlix_DirectorView',
+      'myFlix_GenresList',
+      'myFlix_UserProfile'
+    ],
     ghUrl: 'https://github.com/nightorb/hello-chat',
     liveUrl: ''
   },
@@ -66,6 +82,14 @@ export const projects = [
     ],
     description: 'The Pokédex App is a small web application that loads data from an external API and enables the viewing of details about each Pokémon. It contains the original 150 Pokémon and displays basic data such as height, weight, types, abilities and an image of the Pokémon.',
     coverImage: 'Pokedex_details',
+    projectImages: [
+      'myFlix_LoginView',
+      'myFlix_MoviesPage',
+      'myFlix_MovieDetails',
+      'myFlix_DirectorView',
+      'myFlix_GenresList',
+      'myFlix_UserProfile'
+    ],
     ghUrl: 'https://github.com/nightorb/pokedex-app',
     liveUrl: 'https://nightorb.github.io/pokedex-app/'
   }

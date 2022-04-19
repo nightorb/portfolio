@@ -26,30 +26,6 @@ export default function ProjectCard(props) {
         <div className="image-overlay">
           <h1 className="project-title">{props.title}</h1>
           <h2 className="project-subtitle">{props.subtitle}</h2>
-          {/* <a
-            href={props.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Website
-          </a>
-          <a
-            href={props.ghUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Code
-          </a>
-          <button
-            type="button"
-            onClick={onClickHandle}
-            text="More Info"
-          > 
-            More Info
-          </button>
-          {showProjectDetails && (
-            <ProjectDetails showProjectDetails={showProjectDetails} />
-          )} */}
         </div>
       </button>
       {showProjectDetails && (

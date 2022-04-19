@@ -14,18 +14,18 @@ export default function ProjectDetails(props) {
             <h1 className="project-modal-title">{props.title}</h1>
             <h2 className="project-modal-subtitle">{props.subtitle}</h2>
             <ul>
-              {props.stack.map((details) => (
-                <li key={details.stack}>{details}</li>
+              {props.stack.map((details, i) => (
+                <li key={i}>{details}</li>
               ))}
             </ul>
             <h2 className="project-modal-title">Description</h2>
             <p>{props.description}</p>
             <div className="project-modal-img-container">
-              {props.projectImages.map((details) => (
+              {props.projectImages.map((details, i) => (
                 <img
-                  key={details.projectImages}
+                  key={i}
                   src={`../../../img/${details}.png`}
-                  alt={details.title}
+                  alt={details}
                   className="project-img"
                 />
               ))}

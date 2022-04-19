@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="projects-section">
         <h1 className="section-heading">Projects</h1>
         <div className="projects-list">
-          {projects.map((project) => (
+          {projects.map((project, i) => (
             <ProjectCard
               title={project.title}
               subtitle={project.subtitle}
@@ -21,7 +21,7 @@ export default function Projects() {
               projectImages={project.projectImages}
               ghUrl={project.ghUrl}
               liveUrl={project.liveUrl}
-              key={project.image}
+              key={i}
             />
           ))}
         </div>
