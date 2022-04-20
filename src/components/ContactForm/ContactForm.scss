@@ -1,0 +1,79 @@
+@import '../../themes';
+@import '../../spaces';
+@import '../../queries';
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  max-width: 700px;
+  background-color: $dark-600;
+  border-radius: $br-1;
+  box-shadow: $box-shadow-10, $box-shadow-10, $box-shadow-15;
+  margin: $s-4 auto;
+  padding: $s-4;
+  @include md {
+    width: 50vw;
+    min-width: 400px;
+    max-width: 700px;
+  }
+  @include sm {
+    width: 50vw;
+    min-width: 400px;
+    max-width: 700px;
+  }
+  @include xs {
+    width: 50vw;
+    min-width: 320px;
+    max-width: 520px;
+  }
+  .contact-form-input-group {
+    position: relative;
+    margin-bottom: $s-3;
+    .contact-form-label {
+      display: block;
+      font-family: $font-family-heading;
+      font-size: $font-size-xl;
+      letter-spacing: $letter-spacing-sm;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: $s-2;
+      @include md {
+        font-size: $font-size-lg;
+      }
+      @include sm {
+        font-size: $font-size-lg;
+      }
+      @include xs {
+        font-size: $font-size-md;
+      }
+    }
+    .contact-form-input {
+      width: 100%;
+      font-family: $font-family-text;
+      font-size: $font-size-md;
+      background-color: $dark-400;
+      color: $light-100;
+      border: none;
+      border-radius: $br-1;
+      box-shadow: $box-shadow-10-lt, $box-shadow-10-lt, $box-shadow-15-lt;
+      padding: $s-2;
+      @include xs {
+        font-size: $font-size-sm;
+      }
+    }
+    .form-error-msg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: $font-size-md;
+      color: $accent-100;
+      margin: $s-0;
+      margin-top: $s-1;
+      @include xs {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "forms": {
+    "ContactForm": {
+      "name": "Contact Form",
+      "actions": [{ "type": "email", "to": "ana.nath@gmx.de" }],
+      "fields": {
+        "name": {"required": true, "type": "text"},
+        "email": {"required": true, "type": "email"},
+        "message": {"required": true, "type": "text"}
+      }
+    }
+  }
+}

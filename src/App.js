@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormspreeProvider } from '@formspree/react';
 
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
@@ -11,7 +12,7 @@ import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton'
 
 import './App.scss';
 
-function App() {
+function App({ props, prefix, message}) {
   return (
     <main className="App">
       <Navbar />
@@ -19,7 +20,9 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+        <FormspreeProvider project="1925190683409251957">
+          <Contact {...props} {...prefix} {...message} />
+        </FormspreeProvider>
       <Footer />
       <ScrollToTopButton />
     </main>
