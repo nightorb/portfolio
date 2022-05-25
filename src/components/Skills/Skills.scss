@@ -5,36 +5,38 @@
 #Skills {
   padding: $s-7 0;
   background-color: $dark-700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-list {
   width: 60vw;
   display: flex;
   flex-direction: row;
-  margin: $s-0 auto;
-  margin-top: calc($font-size-xl + $s-7);
+  margin-top: $s-4;
   @include lg {
-    flex-direction: column;
     width: 70vw;
+    flex-flow: row wrap;
+    justify-content: center;
   }
   @include md {
     width: 80vw;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
   }
   @include sm {
     width: 80vw;
     flex-direction: column;
-    margin-top: $s-6;
   }
   @include xs {
     width: 90vw;
     flex-direction: column;
-    margin-top: $s-6;
   }
 }
 h1.section-heading {
   width: 60vw;
-  margin: $s-0 auto;
+  margin: $s-0;
   @include lg {
     width: 70vw;
   }
@@ -50,14 +52,10 @@ h1.section-heading {
 }
 
 .skills-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  text-align: center;
+  width: 33%;
   margin: $s-2;
-  padding: $s-2;
+  padding: $s-3 calc($s-1 * 1.5);
   background-color: $dark-500;
   border-radius: $br-1;
   box-shadow: $box-shadow-10, $box-shadow-10-lt, $box-shadow-15-lt;
@@ -68,93 +66,61 @@ h1.section-heading {
     margin-right: $s-0;
   }
   @include lg {
-    margin: $s-5 $s-0;
-    align-items: flex-start;
-    &:first-child {
-      margin-top: $s-2;
-    }
+    width: calc(50% - $s-4);
     &:last-child {
-      margin-bottom: $s-2;
+      margin-left: $s-0;
     }
   }
   @include md {
-    margin: calc($s-4 + $s-1) $s-0;
-    align-items: flex-start;
-    &:first-child {
-      margin-top: $s-1;
-    }
+    width: calc(50% - $s-4);
     &:last-child {
-      margin-bottom: $s-1;
+      margin-left: $s-0;
     }
   }
   @include sm {
-    margin: $s-4 $s-0;
-    &:first-child {
-      margin-top: $s-0;
-    }
-    &:last-child {
-      margin-bottom: $s-0;
-    }
+    width: 100%;
+    margin-left: $s-0;
+    margin-right: $s-0;
   }
   @include xs {
-    margin: $s-4 $s-0;
-    &:first-child {
-      margin-top: $s-0;
-    }
-    &:last-child {
-      margin-bottom: $s-0;
-    }
+    width: 100%;
+    margin-left: $s-0;
+    margin-right: $s-0;
   }
   h2.skills-subheading {
-    position: absolute;
-    top: $sn-6;
-    left: $s-0;
-    font-size: $font-size-3xl;
+    font-size: $font-size-2xl;
     font-weight: 600;
+    color: $primary-100;
     text-transform: uppercase;
     margin: $s-0;
-    @include md {
-      font-size: $font-size-2xl;
-      top: $sn-5;
-    }
+    margin-bottom: $s-2;
     @include sm {
       font-size: $font-size-xl;
-      top: calc($sn-4 + $sn-1);
     }
     @include xs {
       font-size: $font-size-xl;
-      top: $sn-4;
     }
   }
   ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     padding: $s-0;
     margin: $s-0;
-    @include lg {
-      justify-content: flex-start;
-    }
-    @include md {
-      justify-content: flex-start;
-    }
   }
   li {
+    text-align: center;
     list-style-type: none;
-    font-size: $font-size-lg;
-    background-color: $primary-300;
-    padding: $s-1 $s-2;
-    border-radius: $br-1;
-    box-shadow: $box-shadow-10-lt, $box-shadow-15-lt;
-    margin: $s-1;
+    font-size: $font-size-xl;
+    padding: calc($s-1 / 2);
+    @include lg {
+      font-size: $font-size-xl;
+    }
     @include md {
-      font-size: $font-size-md;
+      font-size: $font-size-lg;
     }
     @include sm {
-      font-size: $font-size-sm;
+      font-size: $font-size-lg;
     }
     @include xs {
-      font-size: $font-size-sm;
+      font-size: $font-size-md;
     }
   }
 }

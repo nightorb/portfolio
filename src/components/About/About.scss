@@ -5,42 +5,30 @@
 #About {
   display: flex;
   flex-flow: column;
+  align-items: center;
   background-image: $gradient-primary;
   padding: $s-7 0;
   color: $light-100;
   opacity: 0.9;
   .about-section {
     width: 60vw;
-    margin: $s-0 auto;
     @include lg {
       width: 70vw;
     }
     @include md {
       width: 80vw;
-      .section-heading {
-        margin-left: $s-0;
-      }
     }
     @include sm {
       width: 80vw;
-      .section-heading {
-        margin-left: $s-0;
-      }
     }
     @include xs {
       width: 90vw;
-      .section-heading {
-        margin-left: $s-0;
-      }
     }
   }
   p.about-text {
-    font-size: $font-size-2xl;
+    font-size: $font-size-xl;
     line-height: $line-height-md;
     margin-top: $s-4;
-    @include md {
-      font-size: $font-size-xl;
-    }
     @include sm {
       font-size: $font-size-lg;
     }

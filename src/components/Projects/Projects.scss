@@ -4,7 +4,7 @@
 
 #Projects {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   padding: $s-7 0;
   margin-bottom: $s-7;
   background-color: $dark-700;
@@ -33,6 +33,20 @@
 
 .projects-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  @include lg {
+    justify-content: center;
+  }
+  @include md {
+    justify-content: center;
+  }
+  @include sm {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  @include xs {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }

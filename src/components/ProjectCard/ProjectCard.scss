@@ -4,207 +4,155 @@
 
 #ProjectCard {
   position: relative;
-  display: flex;
-  flex-flow: column wrap;
-  width: 60vw;
-  height: 400px;
+  width: calc(33% - $s-3);
+  min-width: 350px;
+  margin: $s-2 0;
   border-radius: $br-1;
   background-color: $dark-500;
   box-shadow: $box-shadow-10, $box-shadow-10-lt, $box-shadow-15;
-  margin: $s-3 0;
-  overflow: hidden;
   @include lg {
-    flex-flow: column nowrap;
-    height: auto;
-    width: 70vw;
+    width: calc(50% - $s-4);
+    max-width: 450px;
+    margin: $s-2;
   }
   @include md {
-    flex-flow: column nowrap;
-    height: auto;
-    width: 80vw;
+    width: calc(50% - $s-4);
+    max-width: 450px;
+    min-width: 280px;
+    margin: $s-2 $s-1;
+    &:first-child,
+    &:nth-child(3) {
+      margin-left: 0;
+    }
+    &:last-child,
+    &:nth-child(2) {
+      margin-right: 0;
+    }
   }
   @include sm {
-    flex-flow: column nowrap;
-    height: auto;
-    width: 80vw;
-    margin: $s-1 0;
+    width: 70%;
+    max-width: 450px;
+    min-width: 280px;
+    margin: $s-1;
+    &:first-child {
+      margin-top: $s-2;
+    }
   }
   @include xs {
-    flex-flow: column nowrap;
-    height: auto;
-    width: 90vw;
+    width: 70%;
+    min-width: 280px;
     margin: $s-1 0;
   }
   .project-img {
-    width: 30vw;
-    height: 425px;
-    object-fit: cover;
-    object-position: center;
-    filter: brightness(0.95);
-    @include lg {
-      width: 70vw;
-      height: 400px;
-    }
-    @include md {
-      width: 80vw;
-      height: 350px;
-    }
-    @include sm {
-      width: 80vw;
-      height: 300px;
-    }
-    @include xs {
-      width: 90vw;
-      height: 250px;
-    }
+    width: 100%;
+    filter: brightness(0.85);
+    border-top-left-radius: $br-1;
+    border-top-right-radius: $br-1;
+    margin-bottom: $sn-1;
+    border-bottom: 2px solid $primary-100;
   }
   .image-tint {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30vw;
-    height: 425px;
+    width: 100%;
+    height: calc(100% - $s-4 - $font-size-md - (2 * ($s-1 * 1.5)) - 4px);
+    border-top-left-radius: $br-1;
+    border-top-right-radius: $br-1;
     background-image: $gradient-primary;
-    background-color: $primary-400;
-    opacity: 0.7;
-    transition: 0.5s linear;
-    &:hover {
-      opacity: 0;
-    }
-    @include lg {
-      width: 70vw;
-      height: 400px;
-    }
+    opacity: 0.1;
     @include md {
-      width: 80vw;
-      height: 350px;
+      height: calc(100% - $s-4 - $font-size-sm - (2 * $s-1) - 4px);
     }
     @include sm {
-      width: 80vw;
-      height: 300px;
+      height: calc(100% - $s-4 - $font-size-sm - (2 * $s-1) - 4px);
     }
     @include xs {
-      width: 90vw;
-      height: 250px;
+      height: calc(100% - $s-4 - $font-size-sm - (2 * $s-1) - 4px);
     }
   }
-  .project-card-content {
-    position: relative;
-    width: 30vw;
-    height: 400px;
-    padding: $s-3 $s-4;
-    text-align: left;
-    @include lg {
-      width: 70vw;
-      min-height: 350px;
-      height: fit-content;
-      max-height: 400px;
-      padding: $s-3 $s-7 $s-6 $s-7;
-    }
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - $s-4 - $font-size-md - (2 * ($s-1 * 1.5)) - 4px);
+    background-image: $gradient-primary;
+    color: $light-100;
+    border-top-left-radius: $br-1;
+    border-top-right-radius: $br-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: $s-5;
+    opacity: 0;
+    transition: opacity 0.5s linear;
     @include md {
-      width: 80vw;
-      min-height: 350px;
-      height: fit-content;
-      max-height: 400px;
-      padding: $s-2 $s-4 $s-6 $s-4;
+      height: calc(100% - $s-4 - $font-size-sm - (2 * $s-1) - 4px);
     }
     @include sm {
-      width: 80vw;
-      min-height: 350px;
-      height: fit-content;
-      padding: $s-2 $s-4 $s-6 $s-4;
+      height: calc(100% - $s-4 - $font-size-sm - (2 * $s-1) - 4px);
     }
     @include xs {
-      width: 90vw;
-      min-height: 350px;
-      height: fit-content;
-      padding: $s-2 $s-4 $s-6 $s-4;
+      height: calc(100% - $s-4 - $font-size-sm - (2 * $s-1) - 4px);
+    }
+    &:hover {
+      opacity: 1;
+      > * {
+        transform: translateY(0);
+      }
+    }
+    > * {
+      transform: translateY(20);
+      transition: transform 0.5s;
     }
     h1.project-title {
-      text-align: center;
       font-size: $font-size-3xl;
       letter-spacing: $letter-spacing-sm;
       margin-bottom: $s-0;
       margin-top: $s-0;
       z-index: 2;
-      @include xs {
-        font-size: $font-size-2xl;
-      }
     }
     h2.project-subtitle {
-      text-align: center;
       font-size: $font-size-xl;
-      font-weight: 300;
+      font-weight: 400;
       margin-top: $s-1;
       z-index: 2;
       @include md {
         font-size: $font-size-lg;
       }
       @include sm {
-        font-size: $font-size-md;
+        font-size: $font-size-lg;
       }
       @include xs {
-        font-size: $font-size-md;
-      }
-    }
-    p.project-description {
-      font-size: $font-size-md;
-    }
-    ul {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      padding: $s-0;
-      margin: $s-0;
-    }
-    li {
-      list-style-type: none;
-      font-size: $font-size-lg;
-      background-color: $primary-300;
-      padding: $s-1 $s-2;
-      border-radius: $br-1;
-      box-shadow: $box-shadow-10-lt, $box-shadow-15-lt;
-      margin: 0 $s-1;
-      @include md {
-        font-size: $font-size-md;
-      }
-      @include sm {
-        font-size: $font-size-sm;
-        margin: calc($s-1 / 2) $s-1;
-        box-shadow: $box-shadow-10-lt, $box-shadow-10-lt;
-      }
-      @include xs {
-        font-size: $font-size-sm;
-        margin: calc($s-1 / 2);
-        box-shadow: $box-shadow-10-lt, $box-shadow-10-lt;
+        font-size: $font-size-lg;
       }
     }
   }
   .project-link-container {
-    position: absolute;
-    bottom: $s-3;
-    width: 30vw;
     display: flex;
     justify-content: center;
-    padding-right: calc(2*($s-4));
-    @include lg {
-      width: 70vw;
-      padding-right: calc(2*($s-7));
-    }
-    @include md {
-      width: 80vw;
-    }
-    @include sm {
-      width: 80vw;
-    }
-    @include xs {
-      width: 90vw;
-    }
+    padding-top: $s-2;
+    padding-bottom: $s-2;
     .btn-project-card {
       font-size: $font-size-md;
       text-decoration: none;
-      padding: $s-1;
+      padding: calc($s-1 * 1.5);
       margin: 0 $s-1;
+      @include md {
+        font-size: $font-size-sm;
+        padding: $s-1;
+      }
+      @include sm {
+        font-size: $font-size-sm;
+        padding: $s-1;
+      }
+      @include xs {
+        font-size: $font-size-sm;
+        padding: $s-1;
+      }
     }
   }
 }

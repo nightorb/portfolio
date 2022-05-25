@@ -63,17 +63,14 @@
         font-size: $font-size-sm;
       }
     }
-    .form-error-msg {
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-size: $font-size-md;
-      color: $accent-100;
-      margin: $s-0;
-      margin-top: $s-1;
-      @include xs {
-        font-size: $font-size-sm;
-      }
+  }
+  .form-success-msg {
+    font-size: $font-size-md;
+    color: $accent-100;
+    margin: $s-0 auto;
+    margin-top: $s-2;
+    @include xs {
+      font-size: $font-size-sm;
     }
   }
 }
