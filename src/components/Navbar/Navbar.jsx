@@ -25,12 +25,14 @@ export default function Navbar() {
         >
           Projects
         </Link>
-        <Link
-          to="Projects"
+        <a
+          href={process.env.PUBLIC_URL + `/docs/Anastasia-Nathanailidou_CV.pdf`}
+          target="_blank"
+          rel="noreferrer"
           className="nav-link"
         >
           Resume
-        </Link>
+        </a>
         <Link
           to="Contact"
           smooth={true}
