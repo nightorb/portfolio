@@ -16,7 +16,7 @@ export const projects = [
       'Password: Demo_1234',
       'Please note that you shouldn\'t change the username or password when using the demo user.'
     ],
-    coverImage: 'myFlix_MoviesPage',
+    coverImage: 'myFlix_ProjectCard',
     projectImages: [
       'myFlix_LoginView',
       'myFlix_MoviesPage',
@@ -25,6 +25,7 @@ export const projects = [
       'myFlix_GenresList',
       'myFlix_UserProfile'
     ],
+    caseStudy: 'Case-Study_myFlix',
     ghUrl: 'https://github.com/nightorb/myFlix-client',
     liveUrl: 'https://nightorbs-myflix.netlify.app/'
   },
@@ -39,7 +40,8 @@ export const projects = [
       'Jest'
     ],
     description: '"Meet" is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.',
-    coverImage: 'Meet_DataVis',
+    coverImage: 'Meet_ProjectCard',
+    caseStudy: null,
     ghUrl: 'https://github.com/nightorb/meet',
     liveUrl: 'https://nightorb.github.io/meet/'
   },
@@ -54,9 +56,10 @@ export const projects = [
       'Gifted Chat'
     ],
     description: '"HelloChat" is a chat app for mobile devices created with React Native. The app provides users with a chat interface and options to share images and their location.',
-    coverImage: 'HelloChat_start',
+    coverImage: 'HelloChat_ProjectCard',
+    caseStudy: null,
     ghUrl: 'https://github.com/nightorb/hello-chat',
-    liveUrl: ''
+    liveUrl: null
   },
   {
     id: 4,
@@ -69,35 +72,30 @@ export const projects = [
       'Bootstrap'
     ],
     description: 'The Pokédex App is a small web application that loads data from an external API and enables the viewing of details about each Pokémon. It contains the original 150 Pokémon and displays basic data such as height, weight, types, abilities and an image of the Pokémon.',
-    coverImage: 'Pokedex_details',
+    coverImage: 'Pokedex_ProjectCard',
+    caseStudy: null,
     ghUrl: 'https://github.com/nightorb/pokedex-app',
     liveUrl: 'https://nightorb.github.io/pokedex-app/'
   }
 ];
 
 export const frontendSkills = [
-  'HTML',
-  'CSS',
-  'SCSS',
-  'JavaScript',
-  'React',
-  'Bootstrap',
-  'React Native',
-  'Angular'
+  'HTML, CSS, JavaScript, TypeScript',
+  'React, Redux, Axios',
+  'Bootstrap, Sass/SCSS',
+  'React Native, Expo',
+  'Angular, Material'
 ]
 
 export const backendSkills = [
-  'Node',
-  'Express',
-  'MongoDB'
+  'Node, Express',
+  'APIs (JSON, Postman)',
+  'MongoDB, Mongoose',
+  'AWS, Firestore, Heroku, Netlify'
 ]
 
 export const otherSkills = [
-  'Photoshop',
-  'Maya',
-  'ZBrush',
-  'Substance Designer & Painter',
-  'Unreal Engine 4',
-  'Color Theory',
-  'Sketching & Illustration'
+  'Responsive Design, Color Theory',
+  'Sketching & Illustration, Photoshop',
+  'Maya, ZBrush, Unreal Engine, Substance Designer & Painter',
 ]
