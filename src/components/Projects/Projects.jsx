@@ -19,12 +19,12 @@ export default function Projects() {
               description={project.description}
               coverImage={project.coverImage}
               projectImages={project.projectImages}
+              caseStudy={project.caseStudy}
               ghUrl={project.ghUrl}
               liveUrl={project.liveUrl}
-              key={project.title}
+              key={project.id}
             />
           ))}
-
         </div>
       </div>
     </section>

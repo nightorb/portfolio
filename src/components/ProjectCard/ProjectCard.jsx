@@ -11,23 +11,29 @@ export default function ProjectCard(props) {
         className="project-img"
       />
       <div className="image-tint"></div>
-      <div className="project-card-content">
+      <div className="image-overlay">
         <h1 className="project-title">{props.title}</h1>
         <h2 className="project-subtitle">{props.subtitle}</h2>
-        <ul>
-          {props.stack.map((details) => (
-            <li key={details.stack}>{details}</li>
-          ))}
-        </ul>
-        <p className="project-description">{props.description}</p>
-        <div className="project-link-container">
+      </div>
+      <div className="project-link-container">
+        { props.liveUrl === null ? null : (
           <a href={props.liveUrl} target="_blank" rel="noreferrer" className="btn btn-project-card">
-            Live Demo
+            Demo
           </a>
-          <a href={props.ghUrl} target="_blank" rel="noreferrer" className="btn btn-project-card">
-            Code
+        )}
+        <a href={props.ghUrl} target="_blank" rel="noreferrer" className="btn btn-project-card">
+          Code
+        </a>
+        { props.caseStudy === null ? null : (
+          <a
+            href={process.env.PUBLIC_URL + `/docs/${props.caseStudy}.pdf`}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-project-card"
+          >
+            Case Study
           </a>
-        </div>
+        )}
       </div>
     </div>
   );
