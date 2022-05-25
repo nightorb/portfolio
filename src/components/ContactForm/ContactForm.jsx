@@ -6,10 +6,6 @@ import './ContactForm.scss';
 export default function ContactForm({ props, prefix, message}) {
   const [state, handleSubmit] = useForm('ContactForm');
 
-  if (state.succeeded) {
-    return <div>Your message has been sent!</div>
-  }
-
   return (
     <form
       name="contact"
@@ -68,6 +64,9 @@ export default function ContactForm({ props, prefix, message}) {
       >
         Send
       </button>
+      {state.succeeded && (
+        <div className="form-success-msg">Your message has been sent!</div>
+      )}
     </form>
   );
 }
