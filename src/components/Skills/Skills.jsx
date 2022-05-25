@@ -25,7 +25,7 @@ export default function Skills() {
           </ul>
         </section>
         <section className="skills-section">
-          <h2 className="skills-subheading">Other</h2>
+          <h2 className="skills-subheading">Design & Game Art</h2>
           <ul>
             {otherSkills.map((skill) => (
               <li key={skill}>{skill}</li>
