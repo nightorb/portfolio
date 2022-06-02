@@ -3,38 +3,30 @@
 @import '../../queries';
 
 #Footer {
-  position: relative;
   height: 20vh;
+}
+
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: $gradient-primary;
-  margin-bottom: $s-7;
   padding: $s-2 0;
   opacity: 0.9;
-  @include xs {
-    padding: $s-1 0;
-  }
   .footer-text {
     height: fit-content;
     font-size: $font-size-xl;
     margin: $s-1 0;
-    @include md {
-      font-size: $font-size-xl;
-    }
     @include sm {
       font-size: $font-size-lg;
-      width: 80vw;
       text-align: center;
     }
     @include xs {
       font-size: $font-size-lg;
-      width: 90vw;
-      margin: $s-0;
       text-align: center;
     }
   }
-  .footer-nav {
+  .footer-links {
     display: inherit;
     justify-content: space-evenly;
     width: 50%;
@@ -58,22 +50,18 @@
       opacity: 0.6;
     }
   }
-  .footer-copyright {
-    position: absolute;
-    bottom: $sn-7;
-    height: fit-content;
-    font-size: $font-size-lg;
-    @include md {
-      font-size: $font-size-lg;
-    }
-    @include sm {
-      font-size: $font-size-md;
-      bottom: calc($sn-7 - $sn-1);
-    }
-    @include xs {
-      font-size: $font-size-md;
-      bottom: calc($sn-7 - $sn-1);
-    }
-  }
 }
 
+.footer-copyright {
+  text-align: center;
+  font-size: $font-size-lg;
+  @include md {
+    font-size: $font-size-lg;
+  }
+  @include sm {
+    font-size: $font-size-md;
+  }
+  @include xs {
+    font-size: $font-size-md;
+  }
+}
