@@ -10,30 +10,76 @@
   padding: $s-7 0;
   color: $light-100;
   opacity: 0.9;
-  .about-section {
-    width: 60vw;
+}
+
+.about-section {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include lg {
+    width: 75vw;
+  }
+  @include md {
+    width: 80vw;
+    flex-direction: column;
+  }
+  @include sm {
+    width: 80vw;
+    flex-direction: column;
+  }
+  @include xs {
+    width: 90vw;
+    flex-direction: column;
+  }
+  .text {
+    margin-right: $s-4;
+    margin-top: $s-4;
     @include lg {
-      width: 70vw;
+      width: 100%;
+      min-width: 550px;
     }
-    @include md {
-      width: 80vw;
-    }
-    @include sm {
-      width: 80vw;
-    }
-    @include xs {
-      width: 90vw;
+    p.about-text {
+      font-size: $font-size-xl;
+      line-height: $line-height-md;
+      margin-top: $s-0;
+      margin-bottom: $s-3;
+      @include lg {
+        margin-bottom: $s-2;
+      }
+      @include md {
+        margin-bottom: $s-2;
+        font-size: $font-size-lg;
+      }
+      @include sm {
+        font-size: $font-size-lg;
+      }
+      @include xs {
+        font-size: $font-size-lg;
+      }
     }
   }
-  p.about-text {
-    font-size: $font-size-xl;
-    line-height: $line-height-md;
+  .image {
     margin-top: $s-4;
-    @include sm {
-      font-size: $font-size-lg;
-    }
-    @include xs {
-      font-size: $font-size-lg;
+    .about-img {
+      width: 450px;
+      border-radius: $br-1;
+      box-shadow: $box-shadow-15-lt-2;
+      @include lg {
+        width: 350px;
+      }
+      @include md {
+        width: 300px;
+      }
+      @include sm {
+        width: 300px;
+      }
+      @include xs {
+        width: 300px;
+      }
     }
   }
 }
+
+
+
