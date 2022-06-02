@@ -11,7 +11,7 @@
   background-color: $dark-500;
   box-shadow: $box-shadow-10, $box-shadow-10-lt, $box-shadow-15;
   @include lg {
-    width: calc(50% - $s-4);
+    width: calc(33% - $s-4);
     max-width: 450px;
     margin: $s-2;
   }
@@ -45,31 +45,10 @@
   }
   .project-img {
     width: 100%;
-    filter: brightness(0.85);
+    filter: grayscale(1) brightness(0.85);
     border-top-left-radius: $br-1;
     border-top-right-radius: $br-1;
     margin-bottom: $sn-1;
-    border-bottom: 2px solid $primary-100;
-  }
-  .image-tint {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100% - $s-4 - $font-size-md - (2 * ($s-1 * 1.5)) - 4px);
-    border-top-left-radius: $br-1;
-    border-top-right-radius: $br-1;
-    background-image: $gradient-primary;
-    opacity: 0.1;
-    @include md {
-      height: calc(100% - $s-4 - $font-size-sm - (2 * $s-1) - 4px);
-    }
-    @include sm {
-      height: calc(100% - $s-4 - $font-size-sm - (2 * $s-1) - 4px);
-    }
-    @include xs {
-      height: calc(100% - $s-4 - $font-size-sm - (2 * $s-1) - 4px);
-    }
   }
   .image-overlay {
     position: absolute;

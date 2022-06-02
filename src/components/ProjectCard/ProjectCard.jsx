@@ -10,7 +10,6 @@ export default function ProjectCard(props) {
         alt={props.title}
         className="project-img"
       />
-      <div className="image-tint"></div>
       <div className="image-overlay">
         <h1 className="project-title">{props.title}</h1>
         <h2 className="project-subtitle">{props.subtitle}</h2>
