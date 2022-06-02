@@ -11,23 +11,20 @@
   align-items: flex-start;
   margin: $s-0 auto;
   @include lg {
-    width: 70vw;
+    width: 75vw;
   }
   @include md {
     width: 80vw;
   }
   @include sm {
     width: 80vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   @include xs {
     width: 90vw;
-    display: flex;
-    flex-direction: column;
+    height: calc(100vh - 120px);
+    min-height: 500px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
@@ -47,7 +44,7 @@ h1.big-heading {
     margin-bottom: $s-1;
   }
   @include xs {
-    font-size: $font-size-4xl;
+    font-size: $font-size-3xl;
     text-align: center;
     margin-bottom: $s-1;
   }
@@ -63,7 +60,7 @@ h2.big-heading {
     margin-bottom: $s-3;
   }
   @include xs {
-    font-size: $font-size-xl;
+    font-size: $font-size-lg;
     text-align: center;
     margin-bottom: $s-3;
   }
@@ -79,8 +76,9 @@ h2.sub-heading {
     font-size: $font-size-xl;
   }
   @include xs {
-    font-size: $font-size-xl;
+    font-size: $font-size-lg;
     text-align: center;
+    margin-bottom: $s-1;
   }
 }
 .btn-hero {
@@ -88,12 +86,12 @@ h2.sub-heading {
   @include xs {
     display: flex;
     justify-content: center;
-    margin: $s-3 auto;
+    margin: $s-4;
     &:first-child {
-      margin-top: $s-6;
+      margin-bottom: $s-2;
     }
     &:last-child {
-      margin-bottom: $s-7;
+      margin-top: $s-0;
     }
   }
 }

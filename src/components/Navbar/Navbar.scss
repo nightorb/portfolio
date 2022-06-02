@@ -3,10 +3,13 @@
 @import '../../queries';
 
 #Navbar {
-  height: $s-7;
   display: flex;
   justify-content: center;
-  margin-bottom: $sn-7;
+  margin: $s-3 0;
+  @include xs {
+    height: 120px;
+    margin-bottom: $s-2;
+  }
   .navbar-nav {
     display: inherit;
     justify-content: space-evenly;
@@ -19,13 +22,9 @@
       width: 85%;
     }
     @include xs {
-      width: 90%;
-      height: calc($s-7 + $s-6);
-      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      margin-top: $s-3;
     }
     .nav-link {
       font-family: $font-family-heading;
