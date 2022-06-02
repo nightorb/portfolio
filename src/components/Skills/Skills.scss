@@ -16,7 +16,7 @@
   flex-direction: row;
   margin-top: $s-4;
   @include lg {
-    width: 70vw;
+    width: 75vw;
     flex-flow: row wrap;
     justify-content: center;
   }
@@ -38,7 +38,7 @@ h1.section-heading {
   width: 60vw;
   margin: $s-0;
   @include lg {
-    width: 70vw;
+    width: 75vw;
   }
   @include md {
     width: 80vw;
@@ -110,9 +110,6 @@ h1.section-heading {
     list-style-type: none;
     font-size: $font-size-xl;
     padding: calc($s-1 / 2);
-    @include lg {
-      font-size: $font-size-xl;
-    }
     @include md {
       font-size: $font-size-lg;
     }
