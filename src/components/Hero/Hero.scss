@@ -3,7 +3,7 @@
 @import '../../queries';
 
 #Hero {
-  height: 100vh;
+  height: calc(100vh - (2 * $s-3) - 35px);
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   }
   @include xs {
     width: 90vw;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 110px - $s-2);
     min-height: 500px;
     align-items: center;
     justify-content: center;

@@ -5,9 +5,10 @@
 #Navbar {
   display: flex;
   justify-content: center;
+  height: 35px;
   margin: $s-3 0;
   @include xs {
-    height: 120px;
+    height: 110px;
     margin-bottom: $s-2;
   }
   .navbar-nav {
